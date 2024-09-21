@@ -28,8 +28,8 @@ interface ApiResponse {
   hits: Hit[];
 }
 
-const API_KEY = "3bb5d1a3b992f408b9003effd74c9c22";
-const APP_ID = "82e453da";
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const APP_ID = process.env.NEXT_PUBLIC_APP_ID;
 
 export default function Home() {
   const [inputValue, setInputValue] = useState<string>("");
